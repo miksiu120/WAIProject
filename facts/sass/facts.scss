@@ -1,0 +1,46 @@
+@import '../../sass/_colors';
+
+.facts {
+	max-width: 100vw;
+	&__accordion {
+		padding: 3em 1em;
+		background-color: transparent;
+		ul {
+			background-color: #333;
+			font-size: 1.4rem;
+		}
+		h3 {
+			font-size: 1.8rem !important;
+			padding: 0.5em 1em 0.5em 0;
+			background-color: $box-color;
+			color: #fff;
+		}
+		.ui-state-active {
+			background-color: #ee002e;
+			transition: 0.3s;
+			border: none;
+		}
+
+		div {
+			background-color: $background-color;
+			color: #fff;
+			font-size: 1.6rem;
+			p {
+				padding: 0.2em 0;
+			}
+			ul {
+				margin: 0.5em 1em 0.5em 1em;
+				padding: 0.2em 0;
+				li {
+					margin: 0.2em 0;
+				}
+			}
+			margin-bottom: 0.5em;
+		}
+	}
+}
+
+.strangeBook {
+	position: absolute;
+	top: 10%;
+}

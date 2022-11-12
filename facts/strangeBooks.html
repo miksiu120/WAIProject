@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GroupBooks</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../jqueryui/jquery-ui.css">
+    <link rel="stylesheet" href="../jqueryui/jquery-ui.structure.css">
+    <link rel="stylesheet" href="../jqueryui/jquery-ui.theme.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $("#tabs").tabs();
+        });
+    </script>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/facts.css">
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="container">
+            <a class="nav__title" href="../index.html">
+                <img src="../img/book.svg" alt="ikona książki">
+                <p> MyBooks</p>
+            </a>
+
+            <ul class="nav__list">
+                <li> <a class="nav__list__element" href="../myBooks/myBooks.html">Moje książki</a>
+                </li>
+                <li>
+                    <p class="nav__list__element">ciekawostki</p>
+                    <ul class="nav__list__underlist">
+                        <li> <a href="facts.html"> 5 faktow o ksiazkach </a></li>
+                        <li> <a href="strangeBooks.html"> 5 dziwnych ksiazek </a></li>
+                        <li> <a href="stats.html"> 5 dziwnych ksiazek </a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a class="nav__list__element" href="../share/share.html">podziel się!</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main container">
+        <section class="facts">
+
+            <h2 class="sectionTitle facts__title">5 dziwnych ksiazek</h2>
+
+            <div id="tabs" class="facts__accordion">
+                <ul>
+                    <li><a href="#tabs-1">Przemiana</a></li>
+                    <li><a href="#tabs-2">Proin dolor</a></li>
+                    <li><a href="#tabs-3">Aenean lacinia</a></li>
+                </ul>
+                <div id="tabs-1">
+                    <h4>Przemiana -opowiadanie Franza Kafki napisane pomiędzy 17 listopada a 7
+                        grudnia 1912.</h4>
+                    <p>Bohaterem utworu jest Gregor Samsa, który pewnego dnia budzi się przemieniony w dużego,
+                        potwornego robaka. Chce żyć normalnie. Niestety to niemożliwe, gdyż nie jest nawet w stanie
+                        podnieść się z łóżka. Traci pracę. Rodzina trzyma go zamkniętego w pokoju, dbając, by nikt nie
+                        dowiedział się, co się z nim stało.
+
+                        Pod wpływem przeistoczenia Gregora zmieniają się również członkowie jego rodziny. Muszą zarabiać
+                        na życie, ponieważ dotychczas byli na utrzymaniu Gregora.
+
+                        Przemiana, która całkowicie odizolowała Gregora od świata, doprowadziła w końcu do jego śmierci,
+                        ku uldze rodziny, która miała go już dość.</p>
+                </div>
+                <div id="tabs-2">
+                    <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus
+                        id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus
+                        eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse
+                        sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing.
+                        Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla.
+                        Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium
+                        posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et
+                        purus.</p>
+                </div>
+                <div id="tabs-3">
+                    <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel
+                        vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante.
+                        Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                        Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula
+                        tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
+                    <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus.
+                        Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit.
+                        Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id
+                        euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut
+                        sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula
+                        velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus.
+                        Vivamus a libero vitae lectus hendrerit hendrerit.</p>
+                </div>
+            </div>
+
+
+        </section>
+
+
+
+        <script src="../jqueryui/jquery-ui.js"></script>
+
+    </main>
+    <footer class="footer">
+        <p> Michal Turski Informatyka grupa 6 193453</p>
+    </footer>
+</body>
+
+</html>

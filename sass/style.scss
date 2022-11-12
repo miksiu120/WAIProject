@@ -1,0 +1,263 @@
+@import '__colors';
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: $background-color;
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+	min-height: 100vh;
+	overflow-x: hidden;
+	max-width: 100%;
+}
+.main {
+	background-color: #1c1c1c;
+}
+.container {
+	margin: 0 auto;
+	max-width: 1400px;
+}
+
+.box {
+	background-color: $box-color;
+	border-radius: 6px;
+}
+
+.sectionTitle {
+	position: relative;
+	font-size: 3rem;
+	text-transform: uppercase;
+	padding: 0.7em 0 0.7em 0.75em;
+	margin-left: 0.5em;
+	margin-bottom: 1em;
+	letter-spacing: 1px;
+	margin-top: 2em;
+	&:before {
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		background-color: #fff;
+		height: 100%;
+		width: 10px;
+	}
+}
+.sectionSubtitle {
+	width: 100%;
+	position: relative;
+	font-size: 2.5rem;
+	text-align: center;
+	margin: 1em 0.2em;
+	padding: 0.4em 0.8em;
+	letter-spacing: 1px;
+	&::before,
+	&::after {
+		content: '';
+		position: absolute;
+		transform: translate(0, -50%);
+		width: 8%;
+		height: 3px;
+		background-color: #fff;
+	}
+	&::before {
+		left: 2%;
+		top: 50%;
+	}
+	&::after {
+		top: 50%;
+		right: 2%;
+	}
+}
+
+.nav {
+	position: fixed;
+	padding: 0em 2em;
+	background-color: #222;
+	width: 100%;
+	z-index: 100;
+	.container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		flex-direction: column;
+	}
+	&__title {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 2.5rem;
+		font-weight: 600;
+		color: #fff;
+		text-decoration: none;
+		letter-spacing: 1px;
+		p {
+			margin-left: 0.5em;
+		}
+	}
+
+	ul {
+		list-style: none;
+	}
+	&__list {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		height: 100%;
+		padding: 2em 0;
+
+		li {
+			position: relative;
+			align-self: center;
+			justify-self: center;
+
+			a {
+				color: #fff;
+				text-decoration: none;
+				height: 100%;
+			}
+			&:nth-child(2) {
+				&:hover ul {
+					display: block;
+				}
+			}
+		}
+		&__element {
+			display: inline;
+			position: relative;
+			color: #fff;
+			text-decoration: none;
+			font-size: 1.4rem;
+			font-weight: 400;
+			letter-spacing: 1px;
+			text-transform: uppercase;
+			padding: 1em 1.5em;
+		}
+		&__underlist {
+			display: none;
+			margin-top: 0.5em;
+			padding-top: 1.5em;
+			position: absolute;
+			text-align: center;
+			text-transform: uppercase;
+			transition: 0.3s;
+			li {
+				background-color: #222a;
+				opacity: 0;
+				font-size: 1.4rem;
+				padding: 1em 0.25em;
+				cursor: pointer;
+				border-bottom: 1px solid #fffb;
+				&:first-child {
+					border-top: 1px solid #fffb;
+					animation: showUnderList 0.2s ease-in-out forwards;
+				}
+				&:nth-child(2) {
+					animation: showUnderList 0.2s 0.2s ease-in-out forwards;
+				}
+				&:nth-child(3) {
+					animation: showUnderList 0.4s 0.2s ease-in-out forwards;
+				}
+			}
+		}
+	}
+}
+
+.main {
+	min-height: 100vh;
+	padding: 5em 0;
+}
+
+.footer {
+	text-align: center;
+	font-size: 1.4rem;
+	background-color: #1a1a1a;
+	padding: 1em 0.5em;
+}
+@media (min-width: 768px) {
+	.nav {
+		&__title {
+			font-size: 3.2rem;
+		}
+
+		.container {
+			flex-direction: row;
+		}
+		&__list {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+			&__element {
+				font-size: 2rem;
+				padding: 1em 0.75em;
+			}
+		}
+	}
+	.header {
+		background-image: url('../img/readingMan-big.jpg');
+		&__box {
+			max-width: 700px;
+			&__title {
+				font-size: 3rem;
+			}
+			&__text {
+				font-size: 1.8rem;
+			}
+			&::before {
+				bottom: -25px;
+				left: -25px;
+			}
+			&::after {
+				top: -25px;
+				right: -25px;
+			}
+			&__button {
+				font-size: 1.85rem;
+			}
+		}
+	}
+
+	section {
+		margin: 1.5em 3em;
+	}
+}
+
+@media (min-width: 992px) {
+	.sectionTitle {
+		font-size: 3.4rem;
+	}
+
+	.nav {
+		&__title {
+			font-size: 3.4rem;
+		}
+		&__list {
+			&__underlist {
+				li {
+					font-size: 1.55rem;
+				}
+			}
+		}
+	}
+}
+
+@keyframes showUnderList {
+	0% {
+		transform: rotateX(0deg) scale(0.6);
+		opacity: 0;
+	}
+	50% {
+		opacity: 0;
+	}
+	100% {
+		transform: rotateX(360deg) scale(1);
+		opacity: 1;
+	}
+}

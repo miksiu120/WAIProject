@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GroupBooks</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script> -->
+
+    <link rel="stylesheet" href="../jqueryui/jquery-ui.css">
+    <link rel="stylesheet" href="../jqueryui/jquery-ui.structure.css">
+    <link rel="stylesheet" href="../jqueryui/jquery-ui.theme.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+    <script>
+        $(function () {
+            $("#accordion").accordion();
+        });
+    </script>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/facts.css">
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="container">
+            <a class="nav__title" href="../index.html">
+                <img src="../img/book.svg" alt="ikona książki">
+                <p> MyBooks</p>
+            </a>
+
+            <ul class="nav__list">
+                <li> <a class="nav__list__element" href="../myBooks/myBooks.html">Moje książki</a>
+                </li>
+                <li>
+                    <p class="nav__list__element">ciekawostki</p>
+                    <ul class="nav__list__underlist">
+                        <li> <a href="facts.html"> 5 faktow o ksiazkach </a></li>
+                        <li> <a href="strangeBooks.html"> 5 dziwnych ksiazek </a></li>
+                        <li> <a href="stats.html"> 5 dziwnych ksiazek </a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a class="nav__list__element" href="../share/share.html">podziel się!</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main container">
+        <section class="facts">
+
+            <h2 class="sectionTitle facts__title">5 ciekawostek o ksiazka</h2>
+
+            <div id="accordion" class="facts__accordion">
+                <h3>Ciekawostka 1</h3>
+                <div>
+                    <p>
+                        Pierwsze książki zostały napisane w odległej starożytności. W Mezopotamii na glinianych
+                        tabliczkach zapisywano pismem klinowym różnorodne teksty, wśród których nie mogło zabraknąć tych
+                        o tematyce religijnej. Pierwszą znaną z imienia twórczynią dzieł literackich na świecie jest
+                        Enheduanna - akadyjska księżniczka, żyjąca na przełomie XXIV i XXII w. p.n.e.
+                    </p>
+                </div>
+                <h3>Ciekawostka 2</h3>
+                <div>
+                    <p>
+                        Książki spisywano na bardzo różnorodnych materiałach. Chińczycy wyróżniają się w tym zakresie
+                        szczególną pomysłowością! Najstarsze teksty ryto na kościach, odpowiednio przygotowanych
+                        łodygach bambusa, skorupach żółwi oraz w drewnie. Trzy tysiące lat później wykorzystywano bardzo
+                        kosztowny jedwab. Dopiero poszukiwania tańszego zamiennika doprowadziły do wynalezienia
+                        materiału pisarskiego, z którego korzystamy dziś- papieru.
+                    </p>
+                </div>
+                <h3>Ciekawostka 3</h3>
+                <div>
+                    <p>
+                        Najbardziej popularną serią książek dla młodych czytelników, która łącznie sprzedała się w około
+                        500 milionach egzemplarzy, jest Harry Potter. Jeśli chodzi o pojedyncze tomy, na szczycie
+                        króluje przeznaczony dla nieco starszych czytelników Hobbit J.R.R. Tolkiena. Z książek
+                        dziecięcych najlepsze wyniki sprzedażowe osiągnął Mały książę Antoine de Saint-Exupéry -
+                        zakupiono ponad 100 milionów kopii tej pozycji
+                    </p>
+
+                </div>
+                <h3>Ciekawostka 4</h3>
+                <div>
+                    <p>
+                        Za twórcę e-booków uznaje się Michaela Harta. Założył on Projekt Gutenberg, w zasobach którego w
+                        1971 roku znalazła się pierwsza elektroniczna kopia tekstu. Była to Deklaracja niepodległości
+                        Stanów Zjednoczonych. Hart kontynuował swoją działalność – niedługo później czytelnicy mogli
+                        pobrać teksty polityczne czy Biblię. Pierwszą powieścią dostępną w formie ebooka była Alicja w
+                        Krainie Czarów Lewisa Carrolla – czytelnicy mogli ją pobrać dopiero w 1991 roku.
+                    </p>
+                </div>
+            </div>
+
+        </section>
+
+
+
+        <script src="facts.js"></script>
+        <script src="../jqueryui/jquery-ui.js"></script>
+    </main>
+    <footer class="footer">
+        <p> Michal Turski Informatyka grupa 6 193453</p>
+
+    </footer>
+</body>
+
+</html>

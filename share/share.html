@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GroupBooks</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/882d6061f0.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/shareStyle.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="container">
+            <a class="nav__title" href="../index.html">
+                <img src="../img/book.svg" alt="ikona książki">
+                <p> MyBooks</p>
+            </a>
+
+            <ul class="nav__list">
+                <li> <a class="nav__list__element" href="../myBooks/myBooks.html">Moje książki</a>
+                </li>
+                <li>
+                    <p class="nav__list__element">ciekawostki</p>
+                    <ul class="nav__list__underlist">
+                        <li> <a href="../facts/facts.html"> 5 faktow o ksiazkach </a></li>
+                        <li> <a href="../facts/strangeBooks.html"> 5 dziwnych ksiazek </a></li>
+                        <li> <a href="../facts/stats.html"> 5 dziwnych ksiazek </a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a class="nav__list__element" href="share.html">podziel się!</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main container">
+
+        <section class="share">
+            <h2 class="sectionTitle">Podziel się !</h2>
+            <div class="contentField">
+                <div class="describeAreaAndClicker">
+                    <div class="describeArea">
+                        <p class="describeArea__describe">Podzielcie się tym i dajcie znać poprzez formularz jaką
+                            ksiązke
+                            przeczytaliście
+                            ostatnio. Utworzę później
+                            z tego odpowiednie statystyki</p>
+                        <p class="describeArea__describe"> Jeśli czytasz jakąś książke aktualnie, kliknij plusika,
+                            zobaczymy ilu nas
+                            jest.
+                        </p>
+
+                    </div>
+                    <div class="clicker box">
+                        <h4 class="clicker__describe">Ilość przeczytanych książek:</h4>
+                        <p class="clicker__value"></p>
+                        <div class="clicker__plus">
+                            <noscript>
+                                <p style="color:red;">Do obsługi tej funkcjonalności potrzebny jest JS</p>
+                            </noscript>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-plus">
+                                <line x1="12" y1="5" x2="12" y2="19"></line>
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                            </svg>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="timeOnWebsite box">
+                    <noscript>
+                        <p style="color:red;">Do obsługi tej funkcjonalności potrzebny jest JS</p>
+                    </noscript>
+                    <p class="timeOnWebsite__desc">
+                        Jesteś na stronie od:
+                    </p>
+                    <p class="timeOnWebsite__timer">
+                        0 sekund
+                    </p>
+                    <p class="timeOnWebsite__pagesRead">
+                        Moglbys w tym czasie przeczytać <span class="timeOnWebsite__pagesRead__value"> 0 </span> stron
+                        książki
+                    </p>
+                </div>
+                <div class="contact box">
+                    <h3 class="contact__title">Szukasz kontaktu ?</h3>
+                    <p class="contact__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos atque
+                        rem totam iusto velit consequuntur.
+                    </p>
+                    <p class="contact__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt,
+                        laborum.</p>
+                    <div class="contact__socialList">
+                        <a target="blank" href="https://github.com/"><i class="fa-brands fa-github"></i> github</a>
+                        <a target="blank" href="https://www.facebook.com/"> <i class="fa-brands fa-facebook"></i>
+                            facebook</a>
+                        <a target="_blank" href="https://pl.linkedin.com/"> <i class="fa-brands fa-linkedin-in"></i>
+                            linkedIn</a>
+                    </div>
+                </div>
+
+                <form action="/example.php" method="get" class="form box">
+                    <h3 class="form__title">Krótka ankieta</h3>
+                    <div class="form__inputPlace">
+                        <label for="name">Imie:</label>
+                        <input type="text" name="name" id="name" required>
+                    </div>
+
+                    <div class="form__inputPlace">
+                        <label for="surname">Nazwisko:</label>
+                        <input type="text" name="surname" id="surname" required>
+                    </div>
+                    <div class="form__inputPlace">
+                        <label for="birthDate">Data urodzenia:</label>
+                        <input type="date" name="birthDate" min="1900-01-01" max="2015-01-01" id="birthDate" required>
+                    </div>
+
+                    <div class="form__inputPlace">
+                        <fieldset>
+                            <legend>Podaj płeć:</legend>
+                            <div class="checkboxes">
+                                <input type="radio" id="man" name="gender" value="mężczyzna">
+                                <label for="man">mężczyzna</label>
+
+                                <input type="radio" id="woman" name="gender" value="kobieta">
+                                <label for="woman">kobieta</label>
+
+                                <input type="radio" id="other" name="gender" value="inna" required>
+                                <label for="other">inna</label>
+                            </div>
+                        </fieldset>
+                    </div>
+
+                    <div class="form__inputPlace">
+                        <label for="bookTitle">Ostatnio przeczytana ksiazka:</label>
+                        <input type="text" name="bookTitle" id="bookTitle" required>
+                    </div>
+
+                    <div class="form__inputPlace">
+                        <label for="bookType">Wybierz ulubiony rodzaj literacki: </label>
+                        <select name="bookType" id="bookType" required>
+                            <option value="">--Wybierz rodzaj literacki--</option>
+                            <option value="liryka">liryka</option>
+                            <option value="epika">epika</option>
+                            <option value="dramat">dramat</option>
+                            <option value="liryka">synkretyczny</option>
+                        </select>
+                    </div>
+
+                    <div class="form__inputPlace">
+                        <fieldset>
+                            <legend>Wybierz rodzaje książek które czytasz</legend>
+                            <div>
+                                <input type="checkbox" id="fantasy">
+                                <label for="fantasy">Fantastyka</label>
+                            </div>
+
+                            <div>
+                                <input type="checkbox" id="criminal">
+                                <label for="criminal">Krymniał</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="sci-fi">
+                                <label for="sci-fi">Science fiction</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="romance">
+                                <label for="romance">Romans</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="horror">
+                                <label for="horror">Horror</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="biography">
+                                <label for="biography">Biograficzna</label>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <button class="form__btn form__btn--reset" type="reset">reset</button>
+                    <button class="form__btn form__btn--submit" type="submit">submit</button>
+                </form>
+
+
+            </div>
+        </section>
+
+    </main>
+    <footer class="footer">
+        <p> Michal Turski Informatyka grupa 6 193453</p>
+    </footer>
+    <script src="shareScript.js"></script>
+</body>
+
+</html>

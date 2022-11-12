@@ -1,0 +1,95 @@
+.backgroundBiggerPhoto {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  z-index: 30;
+}
+.backgroundBiggerPhoto img {
+  cursor: pointer;
+  width: clamp(20%, 80%, 1000px);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.myBooks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.myBooks .sectionTitle {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+.myBooks table {
+  margin: 1.5em 0.2em;
+  font-size: 1.5rem;
+  border: 1px solid #fff;
+  background-color: #222;
+}
+.myBooks table thead th {
+  padding: 0.8em;
+  letter-spacing: 1px;
+}
+.myBooks table tbody tr {
+  text-align: center;
+  border-bottom: 1px solid #fff;
+}
+.myBooks table tbody tr td {
+  padding: 0.5em 0.6em;
+}
+.myBooks table tbody tr:nth-child(2n) {
+  background-color: #323232;
+}
+.myBooks__gallery {
+  padding: 1.5em;
+}
+.myBooks__gallery__title {
+  font-size: 2.5rem;
+}
+.myBooks__gallery__area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.myBooks__gallery__area img {
+  -ms-flex-item-align: center;
+      align-self: center;
+  justify-self: center;
+  width: 350px;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .myBooks table .tableTitle {
+    font-size: 2.8rem;
+  }
+  .myBooks table td,
+.myBooks table th {
+    padding: 1.2em 0.8em;
+    font-size: 2rem;
+  }
+}/*# sourceMappingURL=myBooks.css.map */

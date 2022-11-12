@@ -1,0 +1,44 @@
+.facts {
+  max-width: 100vw;
+}
+.facts__accordion {
+  padding: 3em 1em;
+  background-color: transparent;
+}
+.facts__accordion ul {
+  background-color: #333;
+  font-size: 1.4rem;
+}
+.facts__accordion h3 {
+  font-size: 1.8rem !important;
+  padding: 0.5em 1em 0.5em 0;
+  background-color: #3f3f3f;
+  color: #fff;
+}
+.facts__accordion .ui-state-active {
+  background-color: #ee002e;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border: none;
+}
+.facts__accordion div {
+  background-color: #1f1f1f;
+  color: #fff;
+  font-size: 1.6rem;
+  margin-bottom: 0.5em;
+}
+.facts__accordion div p {
+  padding: 0.2em 0;
+}
+.facts__accordion div ul {
+  margin: 0.5em 1em 0.5em 1em;
+  padding: 0.2em 0;
+}
+.facts__accordion div ul li {
+  margin: 0.2em 0;
+}
+
+.strangeBook {
+  position: absolute;
+  top: 10%;
+}/*# sourceMappingURL=facts.css.map */
